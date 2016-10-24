@@ -1,3 +1,3 @@
-# shallow-goof
+# shallow-goof-policy
 
-This is a shallow node project with zero code and a single (vuln) dep
+This is a shallow node project with zero code and a policy file
