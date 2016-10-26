@@ -1,0 +1,10 @@
+version: v1.5.2
+ignore:
+  'npm:node-uuid:20160328':
+    - node-uuid:
+        reason: Test reason
+        expires: '2100-01-01T00:00:00.000Z'
+patch:
+  'npm:mongoose:20160116':
+    - mongoose:
+        patched: '2016-10-24T10:50:51.980Z'

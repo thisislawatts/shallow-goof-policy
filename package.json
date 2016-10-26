@@ -8,8 +8,15 @@
     "url": "https://github.com/Snyk/shallow-goof"
   },
   "dependencies": {
+    "mongoose": "4.2.4",
+    "node-uuid": "1.4.0",
     "qs": "0.0.6",
-    "node-uuid": "1.4.0"
-  }
+    "snyk": "^1.19.1"
+  },
+  "scripts": {
+    "test": "snyk test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
-
