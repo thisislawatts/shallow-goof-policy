@@ -1,4 +1,6 @@
-version: v1.5.2
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:node-uuid:20160328':
     - node-uuid:
@@ -7,8 +9,42 @@ ignore:
   'npm:qs:20170213':
     - qs:
         reason: Test reason
-        expires: '2100-01-01T00:00:00.000Z'            
+        expires: '2100-01-01T00:00:00.000Z'
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:mongoose:20160116':
     - mongoose:
         patched: '2016-10-24T10:50:51.980Z'
+  'npm:ms:20170412':
+    - snyk > snyk-policy > snyk-resolve > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-module > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-policy > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-resolve-deps > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-resolve > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-try-require > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-policy > snyk-module > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-config > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-resolve-deps > snyk-resolve > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-policy > snyk-try-require > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-resolve-deps > snyk-try-require > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-resolve-deps > snyk-module > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - snyk > snyk-resolve-deps > clite > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - mongoose > ms:
+        patched: '2017-05-17T01:02:09.407Z'
+    - mongoose > mquery > debug > ms:
+        patched: '2017-05-17T01:02:09.407Z'
